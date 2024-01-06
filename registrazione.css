@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "faustina";
+  background-image: url(./img/woman-casual-clothing-holding-sh.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-top: 5px;
+  width: 450px;
+  height: 515px;
+  padding: 5px 20px 20px 20px;
+  border-radius: 20px;
+  position: relative;
+  background-color: rgba(234, 148, 35, 0.5);
+  color: #fff;
+  font-family: "faustina";
+  border: 1px solid #333;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+}
+
+.message,
+.signin {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: #f5b153;
+}
+
+input{
+  height: 35px;
+  width: 98%;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+#erroreRegistrazione{
+  font-family: "faustina";
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+  color: red;
+  display: none;
+}
+
+#btnRegistrati, #btnHome{
+  height: 40px;
+  width: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f09b24;
+  border-radius: 10px;
+  color: white;
+  font-family: "faustina";
+  font-size: 20px;
+  cursor: pointer;
+  text-shadow: 2px 2px 2px black;
+  margin-bottom: 10px;
+}
+
+
+#btnRegistrati:hover {
+  background-color: #f1b664;
+  color: black;
+  text-shadow: none;
+}
+#btnHome:hover {
+  background-color: #f1b664;
+  color: black;
+  text-shadow: none;
+}

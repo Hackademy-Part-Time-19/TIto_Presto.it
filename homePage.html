@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presto.it</title>
+    <link rel="stylesheet" href="./homePage.css">
+    <script src="./homePage.js"></script>
+    <script src="./carrello.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <nav id="navPresto">
+        <div id="logo" class="logo">
+            <h2 onclick="vaiHome()">PRESTO</h2>
+
+            <div class="sezioneRegistrati">
+            
+                <div onclick="vaiAlCarrello()" class="carrello">
+
+                    <svg id="iconCarrello" class="w-[15px] h-[15px] text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
+                    </svg>
+                </div>
+                <div class="btnRegistrati">
+                    <button onclick="vaiRegistrazione()" id="registrati">Registrati</button>
+                </div>
+            </div>
+    </nav>
+
+    <header>
+        <div class="fraseIniziale">
+            <h1>Qui troverai tutto quello che cerchi</h1>
+            <h4> I prodotti più ricercati <br><br> I prezzi più convenienti</h4>
+            <div class="btnRicerca">
+                <button onclick="mostraCatalogo()" id="iniziaRicerca">Catalogo</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="containerPreCatalogo">
+
+        <div class="modaDonna">
+            <img id="imgDonna" src="./img/img outfitdonna.jpg" alt="">
+
+            <div class="intestazione">
+                <h3 onclick="vaiCategoria(`women's clothing`)" id="categorieModaDonna">Moda Donna</h3>
+            </div>
+        </div>
+        <div class="modaUomo">
+            <img id="imgUomo" src="./img/img outfit uomo.jpg" alt="">
+            <div class="intestazione">
+                <h3 onclick="vaiCategoria(`men's clothing`)" id="categorieModaUomo">Moda Uomo</h3>
+            </div>
+        </div>
+
+        <div class="elettronica">
+            <img id="imgElettronica" src="./img/img telefonia.jpg" alt="">
+            <div class="intestazione">
+                <h3 onclick="vaiCategoria(`electronics`)" id="categorieElettronica">Elettronica</h3>
+            </div>
+        </div>
+        <div class="gioielli">
+            <img id="imgGioielli" src="./img/img gioielli.jpg" alt="">
+            <div class="intestazione">
+                <h3 id="categorieGioielli" onclick="vaiCategoria(`jewelery`)">Gioielli</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <footer>
+            <div class="containerSezioniFooter">
+                <div class="containerInfoFooter">
+                    <div class="servizi">
+                        <h3>Servizi</h3>
+                        <ul>
+                            <li><a href="#">Pagamenti</a></li>
+                            <li><a href="#">Reclami</a></li>
+                            <li><a href="#">Resi</a></li>
+                        </ul>
+                    </div>
+                    <div class="aboutUs">
+                        <h3>About</h3>
+                        <ul>
+                       
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Termini e Condizioni</a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <h3>Social</h3>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">TikTok</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </footer>
+
+
+</body>
+
+</html>

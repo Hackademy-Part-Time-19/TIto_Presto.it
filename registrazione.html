@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presto.it | Registrazione</title>
+    <link rel="stylesheet" href="./registrazione.css">
+    <script src="./registrazione.js"></script>
+    <script src="./homePage.js"></script>
+   
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="form">
+        <p class="title">Registrazione </p>
+        <p class="message">Registrati per goderti PRESTO.it al massimo </p>
+
+        <label>
+            <input id="inputNomeCompleto" type="text" placeholder="Nome Completo">
+        </label>
+        
+        <label>
+            <input id="inputUsername" type="text" placeholder="Username">
+        </label>
+
+        <label>
+            <input id="inputEmail" type="email" placeholder="Email">
+        </label>
+        
+        <label>
+            <input id="inputPassword" type="password" placeholder="Password">
+        </label>
+
+        <p id="erroreRegistrazione">Username, Email o Password non sono corretti o non sono esistenti</p>
+
+        <button onclick="registrati()" id="btnRegistrati">Registrati</button>
+        <button onclick="vaiHome()" id="btnHome">Torna alla Homepage</button>
+        <p class="signin">Possiedi già un account ? <a href="">Login</a> </p>
+    </div>
+</body>
+</html>

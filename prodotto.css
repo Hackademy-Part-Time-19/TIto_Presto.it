@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "faustina";
+    background: #1d1c1cef;
+}
+
+
+@font-face {
+    font-family: "faustina";
+    src: url(./font/Faustina-VariableFont_wght.ttf)
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f5b153;
+    height: 1px;
+}
+
+
+#navPresto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    color: white;
+    position: fixed;
+    top: 0;
+    text-shadow: 2px 2px 2px black;
+    z-index: 1;
+}
+.logo {
+    flex: 3;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    text-shadow: 2px 2px 2px black;
+    cursor: pointer;
+}
+
+.sezioneRegistrati {
+    flex: 1;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.carrello {
+    flex: 1;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: 2px solid black;
+    margin-left: 600px;
+    cursor: pointer;
+    position: relative;
+}
+#iconCarrello{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100px;
+    color: #f5b153;
+    cursor: pointer;
+
+}
+
+
+#contatoreCarrello{
+    width: 20px;
+    color: white;
+    font-family: "faustina";
+     font-size: 14px;
+    text-shadow: 2px 2px 2px black;
+    display: none;
+    border: 1px solid white;
+    border-radius: 100px;
+    background-color: #f5b153;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: -2px;
+}
+.btnRegistrati {
+    flex: 1;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#registrati {
+    border-radius: 10px;
+    color: white;
+    font-family: "faustina";
+    background-color: transparent;
+    height: 30px;
+    width: 85px;
+    cursor: pointer;
+    margin-right: 25px;
+    font-size: 16px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+#registrati:hover {
+    background-color: #f09b24;
+    color: black;
+    text-shadow: none;
+}
+
+
+header {
+    width: 100%;
+    height: 325px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    background-image: url(https://www.confcommercioimola.it/wp-content/uploads/2015/11/Mango-vetrina-negozio-Fall-2012-800x500_c.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.titoloCatalogo {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    font-size: 28px;
+}
+
+
+.container {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.immagine {
+    flex: 2;
+    height: 400px;
+    width: 100%;
+}
+
+#immagineProdotto {
+    object-fit: contain;
+    height: 400px;
+    width: 100%;
+}
+
+
+.containerInfo {
+    flex: 2;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    margin-right: 20px;
+}
+
+
+
+#descrizioneProdotto{
+    overflow: scroll;
+    display:-webkit-flex;
+    -webkit-line-clamp: 4; 
+            line-clamp: 4; 
+    -webkit-box-orient: horizontal;
+}
+
+
+#btnAcquista {
+    flex: 0.8;
+    height: 30px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f09b24;
+    border-radius: 10px;
+    color: white;
+    font-family: "faustina";
+    font-size: 14px;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 10px;
+}
+
+#loading {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #f09b24;
+    width: 90px;
+    height: 90px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    transition: 0.5s opacity;
+  
+}
+
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+@media (min-width: 310px) and (max-width: 769px) {
+
+    #navPresto {
+        justify-content: space-evenly;
+    }
+
+    .sezioneRegistrati {
+        flex: 2;
+        justify-content: space-evenly;
+    }
+
+    .catalogo {
+        display: none;
+    }
+
+}

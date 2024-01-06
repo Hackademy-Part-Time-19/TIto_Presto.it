@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "faustina";
+  background-image: url(./img/woman-casual-clothing-holding-sh.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #f5b153;
+  height: 1px;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-top: 5px;
+  width: 850px;
+  height: 515px;
+  padding: 5px 20px 20px 20px;
+  border-radius: 20px;
+  position: relative;
+  background-color: rgba(234, 148, 35, 0.5);
+  color: #fff;
+  font-family: "faustina";
+  border: 1px solid #333;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  color: white;
+  font-family: "faustina";
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+}
+
+#containerProdottiCarrello {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+
+.infoCarrello{
+    flex: 6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  
+}
+#imgProdCarrello {
+  flex: 1.5;
+  height: 80px;
+  width: 100px;
+  margin-top: 20px;
+}
+
+#imgCarrello {
+  object-fit: contain;
+  padding-left: 60px;
+  height: 80px;
+  width: 100px;
+
+}
+
+#nomeProdCarrello {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: "faustina";
+  font-size: 14px;
+  text-shadow: 2px 2px 2px black;
+}
+
+#prezzoProdCarrello {
+  flex: 1;
+  padding-left: 50px;
+  color: white;
+  font-family: "faustina";
+  font-size: 14px;
+  text-shadow: 2px 2px 2px black;
+}
+
+#quantitàProdCarrello {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#menoQuantità {
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  background-color: #f09b24;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  padding: 6px;
+}
+
+#piùQuantità {
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  background-color: #f09b24;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  padding: 6px;
+}
+
+
+
+.containerBtn {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#btnHome {
+  height: 40px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f09b24;
+  border-radius: 10px;
+  color: white;
+  font-family: "faustina";
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  text-shadow: 2px 2px 2px black;
+  margin-bottom: 10px;
+}
+
+#btnHome:hover {
+  background-color: #f1b664;
+  color: black;
+  text-shadow: none;
+}
+
+
+#svuotaCarrello {
+  height: 40px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f09b24;
+  border-radius: 10px;
+  color: white;
+  font-family: "faustina";
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  text-shadow: 2px 2px 2px black;
+  margin-bottom: 10px;
+}
+
+#svuotaCarrello:hover {
+  background-color: #f1b664;
+  color: black;
+  text-shadow: none;
+}
+
+#acquistoEffettuato{
+  color: red;
+  text-shadow: 2px 2px 2px black;
+  font-family: "faustina";
+  font-weight: 600;
+  font-size: 40px;
+  display: none;
+}
